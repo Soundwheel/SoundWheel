@@ -26,3 +26,33 @@
   font-weight: 300;
   font-style: normal;
 }
+
+h1{
+  font-family: "Syne", sans-serif;
+  font-size: 3.1rem;
+  font-weight: 600;
+}
+
+h2{
+  font-family: "Syne", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h3{
+  font-family: "Syne", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+p{
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+a{
+  font-family: "Syne", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
