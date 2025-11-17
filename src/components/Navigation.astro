@@ -1,0 +1,129 @@
+ <nav class="nav">
+    <ul class="menu">
+      <li><a class="card-title" href="/">PRISER</a></li>
+      <li><a class="card-title" href="/article">KONTAKT</a></li>
+      <li><a class="card-title" href="/article">OM SOUNDWHEEL</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+  <style> 
+.menu {
+  display: none;
+  list-style: none;
+}
+
+.burger {
+  display: block;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.3s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.3s linear;
+}
+
+nav.active .menu {
+  display: block;
+  background-color: #384222;
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(255, 254, 254, 0.1);
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 10px 70px;
+}
+
+nav.active .menu a {
+  color: #F6F5F3;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+nav {
+    display: flex;
+    justify-content: right;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 0 30px;
+  }
+
+  .menu a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 7px 0;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .menu a:hover {
+    scale: 1.2;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector("nav");
+    const menu = document.querySelector(".menu");
+
+    if (!burger || !nav || !menu) return;
+
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("active");
+      nav.classList.toggle("active");
+    });
+
+    menu.addEventListener("click", (e) => {
+      if (e.target instanceof HTMLElement && e.target.tagName === "A") {
+        burger.classList.remove("active");
+        nav.classList.remove("active");
+      }
+    });
+  });
+</script>
