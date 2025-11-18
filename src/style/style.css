@@ -95,7 +95,7 @@ li {
   font-weight: 300;
 }
 
-.normal_linje{
+.normal_linje {
   margin: 25px;
 }
 
@@ -106,145 +106,146 @@ li {
   display: block;
 }
 
-.forside_img{
- position: relative;
-/*IMG*/
 .forside_img {
-  background-image: url("/forside.webp");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  padding-top: 50%;
-}
-
-.iconic{
-  background-image: url("/icon.svg");
-  position: absolute;
-  top: 20%;
-  left: 25%;
-  width: 50%;
-  aspect-ratio: 1/1;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.spin_hjul{
-  background-image: url("/wheel_spin.svg");
   position: relative;
-  left: 25%;
-  width: 50%;
-  aspect-ratio: 1/1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  /*IMG*/
+  .forside_img {
+    background-image: url("/forside.webp");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 50%;
+  }
 
-.billede_stack {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 40px;
-}
+  .iconic {
+    background-image: url("/icon.svg");
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-.heste_img{
-  background-image: url("/vildeheste.webp");
-  position: relative;
-  left: 10%;
-  width: 115px;
-  height: 150px;
-  border-radius: 10px;
-  background-size: cover;
-}
+  .spin_hjul {
+    background-image: url("/wheel_spin.svg");
+    position: relative;
+    left: 25%;
+    width: 50%;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.natur_img{
-  background-image: url("/nature.webp");
-  position: relative;
-  left: -10%;
-  margin-top: -15px;
-  margin-bottom: 60px;
-  width: 115px;
-  height: 150px;
-  border-radius: 10px;
-  background-size: cover;
-}
+  .billede_stack {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 40px;
+  }
 
-/***************** OM SOUNDWHEEL - MOBIL ******************/
-.center_overskrift {
-  text-align: center;
-}
+  .heste_img {
+    background-image: url("/vildeheste.webp");
+    position: relative;
+    left: 10%;
+    width: 115px;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+  }
 
-.fed_tekst {
-  font-family: "Syne", sans-serif;
-  font-weight: 700;
-}
+  .natur_img {
+    background-image: url("/nature.webp");
+    position: relative;
+    left: -10%;
+    margin-top: -15px;
+    margin-bottom: 60px;
+    width: 115px;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+  }
 
-.baggrund_tekst {
-  background-color: rgba(246, 245, 243, 1);
-  border-radius: 10px;
-  margin: 25px;
-  padding: 15px;
-}
+  /***************** OM SOUNDWHEEL - MOBIL ******************/
+  .center_overskrift {
+    text-align: center;
+  }
 
-.baggrund_tekst p {
-  gap: 20px;
-}
-
-.centreret_tekst {
-  text-align: center;
-  margin: 25px;
-  max-width: 45ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.om_img img {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-@media screen and (min-width: 800px) {
-  h1 {
+  .fed_tekst {
     font-family: "Syne", sans-serif;
-    font-size: 3.1rem;
-    font-weight: 600;
+    font-weight: 700;
   }
 
-  h2 {
-    font-family: "Syne", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
+  .baggrund_tekst {
+    background-color: rgba(246, 245, 243, 1);
+    border-radius: 10px;
+    margin: 25px;
+    padding: 15px;
   }
 
-  h3 {
-    font-family: "Syne", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-  }
-
-  p {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 28px;
-  }
-
-  a {
-    font-family: "Syne", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
-  li {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-  }
-
-  .grid_1-1-1 {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  .baggrund_tekst p {
     gap: 20px;
+  }
+
+  .centreret_tekst {
+    text-align: center;
+    margin: 25px;
+    max-width: 45ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .om_img img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-family: "Syne", sans-serif;
+      font-size: 3.1rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-family: "Syne", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-family: "Syne", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 28px;
+    }
+
+    a {
+      font-family: "Syne", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    li {
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .grid_1-1-1 {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 20px;
+    }
   }
 }
