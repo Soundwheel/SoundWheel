@@ -29,13 +29,7 @@
 
 /***************** STYLE ***************/
 
-main,
-p,
-h1,
-h2,
-h3,
-a,
-li {
+main p h1 h2 h3 a li {
   margin: 25px;
 }
 
@@ -45,38 +39,38 @@ h1 {
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-family: "Syne", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-h3{
+h3 {
   font-family: "Syne", sans-serif;
   font-size: 0.75rem;
   font-weight: 800;
 }
 
-p{
+p {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   font-weight: 300;
 }
 
-a{
+a {
   font-family: "Syne", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
 }
 
-li{
+li {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   font-weight: 300;
 }
 
 /*IMG*/
-.forside_img{
+.forside_img {
   background-image: url("/forside.webp");
   background-size: cover;
   background-position: center;
@@ -84,56 +78,61 @@ li{
   height: 60vh; /* eller hvad du vil */
 }
 
-@media screen and (min-width: 800px){
-  h1{
-  font-family: "Syne", sans-serif;
-  font-size: 3.1rem;
-  font-weight: 600;
-}
-
-h2 {
-  font-family: "Syne", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
-h3 {
-  font-family: "Syne", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-p {
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-a {
-  font-family: "Syne", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-li {
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
 /***************** OM SOUNDWHEEL - MOBIL ******************/
 
 .fed_tekst {
   font-family: "Syne", sans-serif;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .baggrund_tekst {
   background-color: rgba(246, 245, 243, 1);
   border-radius: 10px;
+  gap: 20px;
+}
+
+.baggrund_tekst p {
+  gap: 20px;
 }
 
 .centreret_tekst {
   text-align: center;
 }
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 3.1rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-family: "Syne", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  a {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  li {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
 }
