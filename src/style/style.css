@@ -171,6 +171,13 @@ input[type="text"] {
   padding-top: 50%;
 }
 
+.flex_one_column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 10rem;
+}
+
 .iconic {
   background-image: url("/icon.svg");
   position: absolute;
