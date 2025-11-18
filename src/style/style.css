@@ -1,3 +1,23 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Menu ****************/
+@media (max-width: 1000px) {
+  header {
+    display: none;
+  }
+}
+
 /*FONTS*/
 .syne-bold > {
   font-family: "Syne", sans-serif;
@@ -29,7 +49,12 @@
 
 /***************** STYLE ***************/
 
-main p h1 h2 h3 a li {
+main p,
+h1,
+h2,
+h3,
+a,
+li {
   margin: 25px;
 }
 
@@ -55,6 +80,7 @@ p {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   font-weight: 300;
+  line-height: 28px;
 }
 
 a {
@@ -88,7 +114,8 @@ li {
 .baggrund_tekst {
   background-color: rgba(246, 245, 243, 1);
   border-radius: 10px;
-  gap: 20px;
+  margin: 25px;
+  padding: 15px;
 }
 
 .baggrund_tekst p {
@@ -97,6 +124,12 @@ li {
 
 .centreret_tekst {
   text-align: center;
+  margin: 25px;
+}
+
+.om_img {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 800px) {
@@ -122,6 +155,7 @@ li {
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
+    line-height: 28px;
   }
 
   a {
