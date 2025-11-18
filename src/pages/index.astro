@@ -2,43 +2,42 @@
 import PageLayout from "../layouts/PageLayout.astro";
 import Footer from "../components/Footer.astro";
 import Button from "../components/Button.astro";
+import Cardsection from "../components/Cardsection.astro";
 ---
 
-    <PageLayout>
-	<body>
-		<section class="forside_page">
-		<div class="forside_img">
-			<div class="iconic">
-			</div>
-		</div>
+<PageLayout>
+  <body>
+    <section class="forside_page">
+      <div class="forside_img">
+        <div class="iconic"></div>
+      </div>
 
-        <h2>En guidet velfortjent pause for dine medarbejdere</h2>
+      <h2>En guidet velfortjent pause for dine medarbejdere</h2>
 
-        <p>ÅBEN SOUNDWHEEL</p>
-        <p>TAG DINE HØRETELEFONER PÅ</p>
-        <p>FORDYB DIG I OPLEVELSEN</p>
+      <div class="flex_one_column">
+        <Cardsection img="/public/wheel.svg" text="ÅBEN SOUNDWHEEL" />
+        <Cardsection img="/public/headphones.webp" text="TAG DINE HØRETELEFONER PÅ" />
+        <Cardsection img="/public/immerse.webp" text="FORDYB DIG I OPLEVELSEN" />
+      </div>
 
-		    <Button variant="primary">læs mere</Button>
+      <Button variant="primary">læs mere</Button>
 
-        <hr class="normal_linje">
+      <hr class="normal_linje" />
 
-        <div class="spin_hjul">
-		</div>
+      <div class="spin_hjul"></div>
 
-        <h3>Et godt arbejdsmiljø</h3>
-        <p>Gør det nemt for medarbejderne at tage små pauser, som gør en stor forskel. Soundwheel har flere forskellige fordybende miljøer de kan træde ind i.</p>
+      <h3>Et godt arbejdsmiljø</h3>
+      <p>Gør det nemt for medarbejderne at tage små pauser, som gør en stor forskel. Soundwheel har flere forskellige fordybende miljøer de kan træde ind i.</p>
 
-		<div class="billede_stack">
-		<div class="heste_img">
-		</div>
-        <div class="natur_img">
-		</div>
-		</div>
+      <div class="billede_stack">
+        <div class="heste_img"></div>
+        <div class="natur_img"></div>
+      </div>
 
-        <h3>Forskellige verdener</h3>
-        <p>Der er rig mulighed for universer at træde ind i. Der er blandt andet hesteflokke, i et med naturen og kreative rejser at være en del af.</p>
-		</section>
-	</body>
-	
-<Footer />
-	</PageLayout>
+      <h3>Forskellige verdener</h3>
+      <p>Der er rig mulighed for universer at træde ind i. Der er blandt andet hesteflokke, i et med naturen og kreative rejser at være en del af.</p>
+    </section>
+  </body>
+
+  <Footer />
+</PageLayout>

@@ -8,8 +8,16 @@ const { variant, img, text } = Astro.props;
 </article>
 
 <style>
+  article {
+    background-color: #f6f5f3;
+    border-radius: 10px;
+  }
+
   img {
-    min-width: 100%;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 
   text {
@@ -18,5 +26,6 @@ const { variant, img, text } = Astro.props;
 
   .green {
     background-color: #384222;
+    color: #f6f5f3;
   }
 </style>
