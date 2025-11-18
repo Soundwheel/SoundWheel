@@ -1,11 +1,13 @@
 ---
 const pris = Astro.props.pris;
 const medarbejdere = Astro.props.medarbejdere;
+import Button from "./Button.astro";
 ---
 
 <article class="pakker">
   <h3>Kun {pris} kr om året</h3>
   <p>Op til {medarbejdere} medarbejdere</p>
+  <Button variant="secondary">vælg plan</Button>
 </article>
 
 <style>
