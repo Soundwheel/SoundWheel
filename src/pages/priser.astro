@@ -1,41 +1,58 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import Card from "../components/Card.astro";
+
+const url = "https://ieyfqctlzplaapoqopan.supabase.co/rest/v1/pakker";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlleWZxY3RsenBsYWFwb3FvcGFuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM0NjQ2OTEsImV4cCI6MjA3OTA0MDY5MX0.CQhgTSMbim1yM03IMhSaB2fMyJAXw6dT-gg7qN6z7gs";
+
+const options = {
+  headers: {
+    apikey: key,
+  },
+};
+
+const supaRequset = await fetch(url, options);
+const supaData = await supaRequset.json();
+
+console.log("supaData", supaData);
 ---
 
-    <PageLayout>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-<h1>BEDRE PAUSER FOR DINE MEDARBEJDER</h1>
-<p>Stryk trivslen i din orginasion med SoundWheel Work.</p>
+<PageLayout>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="generator" content={Astro.generator} />
+      <title>Astro</title>
+    </head>
+    <body>
+      <h1>BEDRE PAUSER FOR DINE MEDARBEJDER</h1>
+      <p>Stryk trivslen i din orginasion med SoundWheel Work.</p>
 
-<p>En stress ramt sygemeldt kan om året koste en virksomhed op til 1.000.000 kr. om året.</p>
-<p>Soundwheel koster fra 9.999 kr. om året.</p>
+      <p>En stress ramt sygemeldt kan om året koste en virksomhed op til 1.000.000 kr. om året.</p>
+      <p>Soundwheel koster fra 9.999 kr. om året.</p>
 
-<h2>Fuld adgang til SoundWheel Work</h2>
-<ul>
-<li>Musikdrevne visualiseringsøvelser
-<li>Dansk eller engelsk guide</li>
-<li>Mulighed for at slå guide til og fra</li>
-<li>6 temaer</li>
-<li>Mere musik, mindre tale</li>
-<li>Opret nemt dine medarbejdere</li>
-<li>Intropakke med promomateriale</li>
-<li>Tutorialvideoer med nem on-boarding</li>
-</ul>
-
-<h3>Kun 9.999 kr om året</h3>
-<p>Op til 100 medarbejdere</p>
-<h3>Kun 14.999 kr om året</h3>
-<p>Op til 100 medarbejdere</p>
-<h3>Kun 19.999 kr om året</h3>
-<p>Op til 100 medarbejdere</p>
-	</body>
-</html>
-	</PageLayout>
+      <h2>Fuld adgang til SoundWheel Work</h2>
+      <ul>
+        <li>
+          Musikdrevne visualiseringsøvelser
+          <li>Dansk eller engelsk guide</li>
+          <li>Mulighed for at slå guide til og fra</li>
+          <li>6 temaer</li>
+          <li>Mere musik, mindre tale</li>
+          <li>Opret nemt dine medarbejdere</li>
+          <li>Intropakke med promomateriale</li>
+          <li>Tutorialvideoer med nem on-boarding</li>
+        </li>
+      </ul>
+      <div class="pakker">
+        {
+          supaData.map((pakker, i) => {
+            return <Card pris={pakker.pris} medarbejdere={pakker.medarbejdere} />;
+          })
+        }
+      </div>
+    </body>
+  </html></PageLayout
+>
