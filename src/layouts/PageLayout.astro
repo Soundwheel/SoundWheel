@@ -2,6 +2,7 @@
 import "../style/style.css";
 const {title} = Astro.props;
 import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="da">
@@ -19,7 +20,7 @@ import Navigation from "../components/Navigation.astro";
 		
 	</head>
 	<body>
-
+		<Header />
 		<Navigation />
 		<slot />
 	</body>
