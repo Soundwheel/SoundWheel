@@ -75,13 +75,76 @@ li{
   font-weight: 300;
 }
 
-/*IMG*/
+.normal_linje{
+  margin: 25px;
+}
+
+/***************** INDEX ***************/
+.forside_img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .forside_img{
+ position: relative;
   background-image: url("/forside.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 60vh; /* eller hvad du vil */
+  padding-top: 50%;
+}
+
+.iconic{
+  background-image: url("/icon.svg");
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.spin_hjul{
+  background-image: url("/wheel_spin.svg");
+  position: relative;
+  left: 25%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.billede_stack {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 40px;
+}
+
+.heste_img{
+  background-image: url("/vildeheste.webp");
+  position: relative;
+  left: 10%;
+  width: 115px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.natur_img{
+  background-image: url("/nature.webp");
+  position: relative;
+  left: -10%;
+  margin-top: -15px;
+  margin-bottom: 60px;
+  width: 115px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
 }
 
 @media screen and (min-width: 800px){
