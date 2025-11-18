@@ -1,35 +1,44 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 import Footer from "../components/Footer.astro";
+import Button from "../components/Button.astro";
 ---
 
     <PageLayout>
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
 	<body>
-<h1>SOUNDWHEEL FACILITATOR - SKABER BALANCE MIDT I HVERDAGEN</h1>
+		<hr>
+		
+<h1 class="kontakt_h1"><span class="kontakt_span">SOUNDWHEEL FACILITATOR - </span>SKABER BALANCE MIDT I HVERDAGEN</h1>
 
-<h2>Send os en besked</h2>
-<p>og vi vender tilbage så hurtigt som muligt</p>
+<div class="kontakt_info"> 
+<h2><span class="besked">Send os en besked </span>og vi vender tilbage så hurtigt som muligt</h2>
+<hr>
+<div class="grid_kontakt">
+	<div>
 <h3>Adresse</h3>
 <p>2200, København N</p>
-<h3>Telefon nr.</h3>
+<h3>Telefon nr</h3>
 <p>+45 12345678</p>
+</div>
+<div>
 <h3>Mail</h3>
 <p>mail@mail.dk</p>
 <h3>Linked in</h3>
 <p>linkedin.com/SoundWheel</p>
+</div>
+</div>
 
-<h2>Nyhedsbrev</h2>
-<p>Tilmeld dig vores nyhedsbrev, og få de seneste nyheder fra os først!</p>
+</div>
 
-<p>Email*</p>
+<img src="/public/chill.webp" alt="">
 
+
+<h2 class="nyhedsbrev_h2">Nyhedsbrev</h2>
+<p class="nyhedsbrev_p">Tilmeld dig vores nyhedsbrev, og få de seneste nyheder fra os først!</p>
+<h2 class="nyhedsbrev_p">Email:</h2>
+
+<input type="text" placeholder="Skriv her...">
+    <Button variant="abonner">abonnér</Button>
 
 	</body>
 
