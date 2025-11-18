@@ -54,7 +54,7 @@ h1,
 h2,
 h3,
 a,
-li {
+li, p {
   margin: 25px;
 }
 
@@ -106,9 +106,6 @@ li {
   display: block;
 }
 
-.forside_img {
-  position: relative;
-  /*IMG*/
   .forside_img {
     background-image: url("/forside.webp");
     background-size: cover;
@@ -248,4 +245,4 @@ li {
       gap: 20px;
     }
   }
-}
+
