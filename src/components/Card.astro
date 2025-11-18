@@ -1,0 +1,26 @@
+---
+const pris = Astro.props.pris;
+const medarbejdere = Astro.props.medarbejdere;
+---
+
+<article class="pakker">
+  <h3>Kun {pris} kr om året</h3>
+  <p>Op til {medarbejdere} medarbejdere</p>
+</article>
+
+<style>
+  .pakker {
+    background-color: #384222;
+    border-radius: 20px;
+    max-width: 300px;
+    min-height: 284px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 800px) {
+    .pakker {
+      background-color: #384222;
+      border-radius: 20px;
+    }
+  }
+</style>
