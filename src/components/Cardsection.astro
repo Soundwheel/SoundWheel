@@ -1,0 +1,22 @@
+---
+const { variant, img, text } = Astro.props;
+---
+
+<article class={variant}>
+  <img src={img} />
+  <p>{text}</p>
+</article>
+
+<style>
+  img {
+    min-width: 100%;
+  }
+
+  text {
+    text-align: center;
+  }
+
+  .green {
+    background-color: #384222;
+  }
+</style>
