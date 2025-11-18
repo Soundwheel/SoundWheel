@@ -27,7 +27,19 @@
   font-style: normal;
 }
 
-h1{
+/***************** STYLE ***************/
+
+main,
+p,
+h1,
+h2,
+h3,
+a,
+li {
+  margin: 25px;
+}
+
+h1 {
   font-family: "Syne", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
@@ -79,33 +91,49 @@ li{
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-family: "Syne", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
 }
 
-h3{
+h3 {
   font-family: "Syne", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-p{
+p {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-a{
+a {
   font-family: "Syne", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-li{
+li {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+/***************** OM SOUNDWHEEL - MOBIL ******************/
+
+.fed_tekst {
+  font-family: "Syne", sans-serif;
+  font-weight: 750;
+}
+
+.baggrund_tekst {
+  background-color: rgba(246, 245, 243, 1);
+  border-radius: 10px;
+}
+
+.centreret_tekst {
+  text-align: center;
 }
 }
