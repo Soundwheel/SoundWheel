@@ -54,7 +54,8 @@ h1,
 h2,
 h3,
 a,
-li, p {
+li,
+p {
   margin: 25px;
 }
 
@@ -106,141 +107,133 @@ li {
   display: block;
 }
 
-  .forside_img {
-    background-image: url("/forside.webp");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    padding-top: 50%;
-  }
+.forside_img {
+  background-image: url("/forside.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 50%;
+}
 
-  .iconic {
-    background-image: url("/icon.svg");
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    width: 50%;
-    aspect-ratio: 1/1;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.iconic {
+  background-image: url("/icon.svg");
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  .spin_hjul {
-    background-image: url("/wheel_spin.svg");
-    position: relative;
-    left: 25%;
-    width: 50%;
-    aspect-ratio: 1/1;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.spin_hjul {
+  background-image: url("/wheel_spin.svg");
+  position: relative;
+  left: 25%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  .billede_stack {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 40px;
-  }
+.billede_stack {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 40px;
+}
 
-  .heste_img {
-    background-image: url("/vildeheste.webp");
-    position: relative;
-    left: 10%;
-    width: 60%;
-    aspect-ratio: 132 / 165;
-    border-radius: 10px;
-    background-size: cover;
-  }
+.heste_img {
+  background-image: url("/vildeheste.webp");
+  position: relative;
+  left: 10%;
+  width: 60%;
+  aspect-ratio: 132 / 165;
+  border-radius: 10px;
+  background-size: cover;
+}
 
-  .natur_img {
-    background-image: url("/nature.webp");
-    position: relative;
-    left: -10%;
-    margin-bottom: 60px;
-    width: 60%;
-    aspect-ratio: 132 / 165;
-    border-radius: 10px;
-    background-size: cover;
-  }
+.natur_img {
+  background-image: url("/nature.webp");
+  position: relative;
+  left: -10%;
+  margin-bottom: 60px;
+  width: 60%;
+  aspect-ratio: 132 / 165;
+  border-radius: 10px;
+  background-size: cover;
+}
 
-  /***************** OM SOUNDWHEEL - MOBIL ******************/
-  .center_overskrift {
-    text-align: center;
-  }
+/***************** OM SOUNDWHEEL - MOBIL ******************/
+.center_overskrift {
+  text-align: center;
+}
 
-  .fed_tekst {
+.fed_tekst {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
+
+.baggrund_tekst {
+  background-color: rgba(246, 245, 243, 1);
+  border-radius: 10px;
+  margin: 25px;
+}
+
+.baggrund_tekst p {
+  padding: 10px;
+}
+
+.centreret_tekst {
+  text-align: center;
+  max-width: 45ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
     font-family: "Syne", sans-serif;
-    font-weight: 700;
+    font-size: 3.1rem;
+    font-weight: 600;
   }
 
-  .baggrund_tekst {
-    background-color: rgba(246, 245, 243, 1);
-    border-radius: 10px;
-    margin: 25px;
-    padding: 15px;
+  h2 {
+    font-family: "Syne", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
   }
 
-  .baggrund_tekst p {
+  h3 {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  a {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  li {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .grid_1-1-1 {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
   }
-
-  .centreret_tekst {
-    text-align: center;
-    margin: 25px;
-    max-width: 45ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .om_img img {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  @media screen and (min-width: 800px) {
-    h1 {
-      font-family: "Syne", sans-serif;
-      font-size: 3.1rem;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-family: "Syne", sans-serif;
-      font-size: 2.5rem;
-      font-weight: 400;
-    }
-
-    h3 {
-      font-family: "Syne", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-    }
-
-    p {
-      font-family: "Inter", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 300;
-      line-height: 28px;
-    }
-
-    a {
-      font-family: "Syne", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 400;
-    }
-
-    li {
-      font-family: "Inter", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
-
-    .grid_1-1-1 {
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 20px;
-    }
-  }
-
+}
