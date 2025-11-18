@@ -1,3 +1,23 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************** Menu ****************/
+@media (max-width: 1000px) {
+  header {
+    display: none;
+  }
+}
+
 /*FONTS*/
 .syne-bold > {
   font-family: "Syne", sans-serif;
@@ -29,8 +49,7 @@
 
 /***************** STYLE ***************/
 
-main,
-p,
+main p,
 h1,
 h2,
 h3,
@@ -45,31 +64,32 @@ h1 {
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-family: "Syne", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-h3{
+h3 {
   font-family: "Syne", sans-serif;
   font-size: 0.75rem;
   font-weight: 800;
 }
 
-p{
+p {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   font-weight: 300;
+  line-height: 28px;
 }
 
-a{
+a {
   font-family: "Syne", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
 }
 
-li{
+li {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   font-weight: 300;
@@ -88,6 +108,8 @@ li{
 
 .forside_img{
  position: relative;
+/*IMG*/
+.forside_img {
   background-image: url("/forside.webp");
   background-size: cover;
   background-position: center;
@@ -147,56 +169,82 @@ li{
   background-size: cover;
 }
 
-@media screen and (min-width: 800px){
-  h1{
-  font-family: "Syne", sans-serif;
-  font-size: 3.1rem;
-  font-weight: 600;
-}
-
-h2 {
-  font-family: "Syne", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
-h3 {
-  font-family: "Syne", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-p {
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-a {
-  font-family: "Syne", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-li {
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
 /***************** OM SOUNDWHEEL - MOBIL ******************/
+.center_overskrift {
+  text-align: center;
+}
 
 .fed_tekst {
   font-family: "Syne", sans-serif;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .baggrund_tekst {
   background-color: rgba(246, 245, 243, 1);
   border-radius: 10px;
+  margin: 25px;
+  padding: 15px;
+}
+
+.baggrund_tekst p {
+  gap: 20px;
 }
 
 .centreret_tekst {
   text-align: center;
+  margin: 25px;
+  max-width: 45ch;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.om_img img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-family: "Syne", sans-serif;
+    font-size: 3.1rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-family: "Syne", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  a {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  li {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .grid_1-1-1 {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
 }
