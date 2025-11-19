@@ -22,7 +22,7 @@ console.log("supaData", supaData);
   <body>
     <h1 class="center_overskrift">BEDRE PAUSER FOR DINE MEDARBEJDER</h1>
     <p class="center_overskrift">Stryk trivslen i din orginasion med SoundWheel Work.</p>
-    <div class="grid_1-1">
+    <div class="grid_pris_1-1">
       <div>
         <img src="/public/stress.svg" alt="" />
         <p class="center_overskrift">En stress ramt sygemeldt kan om året koste en virksomhed op til 1.000.000 kr. om året.</p>
@@ -55,7 +55,7 @@ console.log("supaData", supaData);
     <div class="grid_1-1-1">
       {
         supaData.map((pakker, i) => {
-          return <Card pris={pakker.pris} medarbejdere={pakker.medarbejdere} />;
+          return <Card variant="pakker" data={pakker} />;
         })
       }
     </div>

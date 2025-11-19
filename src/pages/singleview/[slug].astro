@@ -1,0 +1,75 @@
+---
+import Footer from "../../components/Footer.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
+import Cardsection from "../../components/Cardsection.astro";
+import Button from "../../components/Button.astro";
+export async function getStaticPaths() {
+const url = "https://ieyfqctlzplaapoqopan.supabase.co/rest/v1/pakker";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlleWZxY3RsenBsYWFwb3FvcGFuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM0NjQ2OTEsImV4cCI6MjA3OTA0MDY5MX0.CQhgTSMbim1yM03IMhSaB2fMyJAXw6dT-gg7qN6z7gs";
+
+const options = {
+  headers: {
+    apikey: key,
+  },
+};
+
+const supaRequset = await fetch(url, options);
+const supaData = await supaRequset.json();
+
+  return supaData.map((pakker) => {
+    return {
+      params: { slug: pakker.slug },
+      props: { pakker },
+    };
+  });
+}
+
+const { pakker } = Astro.props;
+---
+
+
+    <PageLayout>
+
+
+	<body>
+
+<h2 class="singleview_h2">Op til {pakker.medarbejdere} medarbejdere</h2>
+<h1 class="singleview_h1">KUN {pakker.pris} KR OM ÅRET</h1>
+           <div class="flex_one_column">
+        <Cardsection img="../../public/mobil_icon.svg" text="ADGANG TIL VORES KOMPLETTE BIBLIOTEK AF LYDREJSER, SOM KAN BRUGES INDIVIDUEL ELLER I GRUPPER" />
+        <Cardsection img="../../public/pc_icon.svg" text="BRUGERVENLIGT ADMINPANEL. TILFØJ ALLE MEDARBEJDERE VED TRYK PÅ EN KNAP" />
+        <Cardsection img="../../public/pc2_icon.svg" text="STATISTIKKER, DER GIVER INDSIGT I, HVORDAN SOUNDWHEEL SKABER VÆRDI I ORGANISATIONEN" />
+      </div>
+
+<hr>
+
+<div class="grid_singleview">
+    <div>
+<p>Når du vælger vores platform, får du alt, hvad du skal bruge for at skabe ro, fokus og trivsel hos dine medarbejdere.</p>
+<p>Du får musikdrevne visualiseringsøvelser, der hjælper med at koble fra og finde ny energi – med mulighed for at vælge guide på dansk eller engelsk, eller helt slå guiden fra og lade musikken gøre arbejdet.</p>
+</div>
+<div>
+<p>Du får adgang til seks gennemarbejdede temaer med fokus på mere musik og mindre tale, så oplevelsen føles autentisk og behagelig.</p>
+<p>Du får en nem måde at oprette og invitere dine medarbejdere på – og en komplet intropakke med promomateriale, så du let kan introducere konceptet i din organisation.</p>
+<p>Og du får selvfølgelig korte tutorialvideoer, der sikrer en hurtig og enkel onboarding, så I kan komme i gang med det samme.</p>
+</div>
+</div>
+
+<div class="single_pakke">
+<h2 class="singleview_h2">Fuld adgang til SoundWheel Work</h2>
+<ul>
+<li>Musikdrevne visualiseringsøvelser
+<li>Dansk eller engelsk guide</li>
+<li>Mulighed for at slå guide til og fra</li>
+<li>6 temaer</li>
+<li>Mere musik, mindre tale</li>
+<li>Opret nemt dine medarbejdere</li>
+<li>Intropakke med promomateriale</li>
+<li>Tutorialvideoer med nem on-boarding</li>
+</ul>
+<Button variant="book">Book et møde</Button>
+</div>
+  <a href="/priser" class="tilbage">Tilbage til pakker</a>
+	</body>
+<Footer />
+	</PageLayout>
