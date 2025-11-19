@@ -2,6 +2,7 @@
 const { variant = "primary" } = Astro.props;
 ---
 
+
 <button class={variant}>
   {(<slot />)}
 </button>
@@ -53,5 +54,22 @@ const { variant = "primary" } = Astro.props;
     display: block;
     margin: 0 auto;
     font-size: 0.8rem;
+  }
+
+    .book {
+    background-color: transparent;
+    color: #fffcf4;
+    border: 2px solid #fffcf4;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+       display: block;
+    margin: 0 auto;
+  }
+
+    @media screen and (min-width: 800px) {
+    .book {
+   font-size: 1.5rem;
+    }
   }
 </style>
