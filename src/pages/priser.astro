@@ -20,26 +20,37 @@ console.log("supaData", supaData);
 
 <PageLayout>
   <body>
-    <h1>BEDRE PAUSER FOR DINE MEDARBEJDER</h1>
-    <p>Stryk trivslen i din orginasion med SoundWheel Work.</p>
-
-    <p>En stress ramt sygemeldt kan om året koste en virksomhed op til 1.000.000 kr. om året.</p>
-    <p>Soundwheel koster fra 9.999 kr. om året.</p>
-
+    <h1 class="center_overskrift">BEDRE PAUSER FOR DINE MEDARBEJDER</h1>
+    <p class="center_overskrift">Stryk trivslen i din orginasion med SoundWheel Work.</p>
+    <div class="grid_1-1">
+      <div>
+        <img src="/public/stress.svg" alt="" />
+        <p class="center_overskrift">En stress ramt sygemeldt kan om året koste en virksomhed op til 1.000.000 kr. om året.</p>
+      </div>
+      <div>
+        <img src="/public/balance.svg" alt="" />
+        <p class="center_overskrift">Soundwheel koster fra 9.999 kr. om året.</p>
+      </div>
+    </div>
     <hr />
-    <h2>Fuld adgang til SoundWheel Work</h2>
-    <ul>
-      <li>
-        Musikdrevne visualiseringsøvelser
-        <li>Dansk eller engelsk guide</li>
-        <li>Mulighed for at slå guide til og fra</li>
-        <li>6 temaer</li>
-        <li>Mere musik, mindre tale</li>
-        <li>Opret nemt dine medarbejdere</li>
-        <li>Intropakke med promomateriale</li>
-        <li>Tutorialvideoer med nem on-boarding</li>
-      </li>
-    </ul>
+    <div class="sektion_priser">
+      <h2>Fuld adgang til SoundWheel Work</h2>
+      <ul class="liste">
+        <li>
+          Musikdrevne visualiseringsøvelser
+          <li>Dansk eller engelsk guide</li>
+          <li>Mulighed for at slå guide til og fra</li>
+          <li>6 temaer</li>
+          <li>Mere musik, mindre tale</li>
+          <li>Opret nemt dine medarbejdere</li>
+          <li>Intropakke med promomateriale</li>
+          <li>Tutorialvideoer med nem on-boarding</li>
+        </li>
+      </ul>
+      <div class="headphones-image">
+        <img class="headphones" src="/public/headphones.webp" alt="høretelefoner" />
+      </div>
+    </div>
 
     <div class="grid_1-1-1">
       {
@@ -48,7 +59,9 @@ console.log("supaData", supaData);
         })
       }
     </div>
-    <h2>Over 1.000 medarbejdere? Kontakt os</h2>
+    <h2 class="center_overskrift">
+      Over 1.000 medarbejdere?<br /><b>Kontakt os</b>
+    </h2>
   </body>
 
   <Footer />

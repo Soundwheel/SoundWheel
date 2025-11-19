@@ -230,6 +230,40 @@ input[type="text"] {
   background-size: cover;
 }
 
+/***************** PRiser ******************/
+.pakker {
+  display: block;
+  margin: 0, auto;
+}
+
+.grid_1-1-1 {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr; /* Mobil = én kolonne */
+  justify-items: center;
+}
+
+.grid_1-1 {
+  margin: 2rem 4rem;
+  margin-bottom: 5rem;
+}
+
+.liste {
+  margin-left: 2rem;
+}
+
+.headphones {
+  max-width: 200px;
+}
+.headphones-image {
+  display: flex;
+  justify-content: flex-end;
+  transform: rotate(15deg);
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
 /***************** OM SOUNDWHEEL - MOBIL ******************/
 .center_overskrift {
   text-align: center;
@@ -307,6 +341,9 @@ input[type="text"] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
+    justify-content: center;
+    margin-right: 8rem;
+    margin-left: 8rem;
   }
 
   .grid_om {
@@ -392,5 +429,28 @@ input[type="text"] {
 
   .texst_bottom_row {
     order: 1;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 15rem;
+    margin-bottom: 5rem;
+  }
+
+  .headphones {
+    max-width: 400px;
+  }
+  .headphones-image {
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(15deg);
+    margin-bottom: 10rem;
+    margin-top: -20rem;
+  }
+  .sektion_priser {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 5rem;
   }
 }
