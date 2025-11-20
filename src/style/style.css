@@ -155,20 +155,14 @@ input[type="text"] {
 }
 
 /***************** INDEX ***************/
-.forside_img img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/*IMG*/
 .forside_img {
   background-image: url("/forside.webp");
   background-size: cover;
   position: relative;
-  background-position: center;
+  background-position: center  -250px;
   width: 100%;
   padding-top: 50%;
+  background-repeat: no-repeat;
 }
 
 .flex_one_column {
@@ -181,9 +175,9 @@ input[type="text"] {
 .iconic {
   background-image: url("/icon.svg");
   position: absolute;
-  top: 20%;
-  left: 25%;
-  width: 50%;
+  top: 10%;
+  left: 30%;
+  width: 40%;
   aspect-ratio: 1/1;
   background-size: contain;
   background-repeat: no-repeat;
