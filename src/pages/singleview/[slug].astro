@@ -32,12 +32,12 @@ const { pakker } = Astro.props;
     <h2 class="singleview_h2">Op til {pakker.medarbejdere} medarbejdere</h2>
     <h1 class="singleview_h1">KUN {pakker.pris} KR OM ÅRET</h1>
     <div class="grid_1-1-1">
-      <Cardsection img="../../public/mobil_icon.svg" text="ADGANG TIL VORES KOMPLETTE BIBLIOTEK AF LYDREJSER, SOM KAN BRUGES INDIVIDUEL ELLER I GRUPPER" />
+      <Cardsection class="mobile_icon" img="../../public/mobil_icon.svg" text="ADGANG TIL VORES KOMPLETTE BIBLIOTEK AF LYDREJSER, SOM KAN BRUGES INDIVIDUEL ELLER I GRUPPER" />
       <Cardsection img="../../public/pc_icon.svg" text="BRUGERVENLIGT ADMINPANEL. TILFØJ ALLE MEDARBEJDERE VED TRYK PÅ EN KNAP" />
       <Cardsection img="../../public/pc2_icon.svg" text="STATISTIKKER, DER GIVER INDSIGT I, HVORDAN SOUNDWHEEL SKABER VÆRDI I ORGANISATIONEN" />
     </div>
 
-    <hr />
+    <hr>
 
     <div class="grid_singleview">
       <div>
@@ -66,8 +66,8 @@ const { pakker } = Astro.props;
         </li>
         <Button variant="book">Book et møde</Button>
       </ul>
-      <a href="/priser" class="tilbage">Tilbage til pakker</a>
     </div>
+    <a href="/priser" class="tilbage">Tilbage til pakker</a>
     <Footer />
   </body>
 </PageLayout>
