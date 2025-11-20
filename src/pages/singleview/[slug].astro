@@ -36,7 +36,7 @@ const { pakker } = Astro.props;
 <h2 class="singleview_h2">Op til {pakker.medarbejdere} medarbejdere</h2>
 <h1 class="singleview_h1">KUN {pakker.pris} KR OM ÅRET</h1>
            <div class="flex_one_column">
-        <Cardsection img="../../public/mobil_icon.svg" text="ADGANG TIL VORES KOMPLETTE BIBLIOTEK AF LYDREJSER, SOM KAN BRUGES INDIVIDUEL ELLER I GRUPPER" />
+        <Cardsection class="mobile-card" img="../../public/mobil_icon.svg" text="ADGANG TIL VORES KOMPLETTE BIBLIOTEK AF LYDREJSER, SOM KAN BRUGES INDIVIDUEL ELLER I GRUPPER" />
         <Cardsection img="../../public/pc_icon.svg" text="BRUGERVENLIGT ADMINPANEL. TILFØJ ALLE MEDARBEJDERE VED TRYK PÅ EN KNAP" />
         <Cardsection img="../../public/pc2_icon.svg" text="STATISTIKKER, DER GIVER INDSIGT I, HVORDAN SOUNDWHEEL SKABER VÆRDI I ORGANISATIONEN" />
       </div>
@@ -69,7 +69,7 @@ const { pakker } = Astro.props;
 </ul>
 <Button variant="book">Book et møde</Button>
 </div>
-  <a href="/priser" class="tilbage">Tilbage til pakker</a>
+  <a href="/priser" class="abonner">Tilbage til pakker</a>
 	</body>
 <Footer />
 	</PageLayout>
