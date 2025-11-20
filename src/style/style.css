@@ -161,7 +161,7 @@ input[type="text"] {
   position: relative;
   background-position: center;
   width: 100%;
-  padding-top: 35%;
+  padding-top: 43%;
   background-repeat: no-repeat;
 }
 
@@ -175,7 +175,7 @@ input[type="text"] {
 .iconic {
   background-image: url("/icon.svg");
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 30%;
   width: 40%;
   aspect-ratio: 1/1;
