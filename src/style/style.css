@@ -345,6 +345,10 @@ input[type="text"] {
   text-decoration: none;
 }
 
+.mobile-card img {
+  width: 25%;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-family: "Syne", sans-serif;
