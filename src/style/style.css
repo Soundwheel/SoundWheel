@@ -97,6 +97,7 @@ li {
 
 .normal_linje {
   margin: 25px;
+  margin-top: 5rem;
 }
 
 .kontakt_h1 {
@@ -337,6 +338,7 @@ input[type="text"] {
   margin: 0 auto;
   font-size: 0.8rem;
   text-decoration: none;
+  margin-bottom: 5rem;
 }
 
 .mobile_icon img {
@@ -353,6 +355,16 @@ input[type="text"] {
 
 .centreret_overskrift {
   text-align: center;
+}
+
+.kontakt_os {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.linje_singleview {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 800px) {
