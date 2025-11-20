@@ -242,6 +242,8 @@ input[type="text"] {
   gap: 20px;
   grid-template-columns: 1fr; /* Mobil = én kolonne */
   justify-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .grid_pris_1-1 {
@@ -446,13 +448,6 @@ input[type="text"] {
 
   .nyhedsbrev_p {
     font-size: 1.2rem;
-  }
-
-  .flex_one_column {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin: 2rem 7rem;
   }
 
   .top_row {
