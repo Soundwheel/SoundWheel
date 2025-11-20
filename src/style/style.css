@@ -196,6 +196,10 @@ input[type="text"] {
   background-position: center;
 }
 
+.spin_hjul:hover {
+  transform: rotate(360deg); /* vælg den vinkel du vil */
+  transition: transform 1.8s ease;
+}
 .billede_stack {
   position: relative;
   display: flex;
@@ -207,9 +211,9 @@ input[type="text"] {
 .heste_img {
   background-image: url("/vildeheste.webp");
   position: relative;
-  left: 10%;
-  width: 115px;
-  height: 150px;
+  left: -7%;
+  width: 150px;
+  height: 200px;
   border-radius: 10px;
   background-size: cover;
 }
@@ -217,11 +221,11 @@ input[type="text"] {
 .natur_img {
   background-image: url("/nature.webp");
   position: relative;
-  left: -10%;
+  left: -15%;
   margin-top: -15px;
   margin-bottom: 60px;
-  width: 115px;
-  height: 150px;
+  width: 160px;
+  height: 220px;
   border-radius: 10px;
   background-size: cover;
 }
@@ -492,6 +496,7 @@ input[type="text"] {
 
   .texst_bottom_row {
     order: 1;
+    margin-top: 25px;
   }
 
   .grid_pris_1-1 {
@@ -566,5 +571,27 @@ input[type="text"] {
 
   .tree_mobil {
     width: 280px;
+  }
+
+  .heste_img {
+    background-image: url("/vildeheste.webp");
+    position: relative;
+    left: -7%;
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+  }
+
+  .natur_img {
+    background-image: url("/nature.webp");
+    position: relative;
+    left: -17%;
+    margin-top: -15px;
+    margin-bottom: 60px;
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
   }
 }
