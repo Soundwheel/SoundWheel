@@ -1,19 +1,17 @@
 ---
-const {variant, data} = Astro.props;
+const { variant, data } = Astro.props;
 import Button from "./Button.astro";
 ---
 
 <article class={variant}>
   <h3>Kun {data.pris} kr om året</h3>
   <p>Op til {data.medarbejdere} medarbejdere</p>
-  <a href=`/singleview/${data.slug}` >
-<Button variant="secondary">Vælg plan</Button>
+  <a href=`/singleview/${data.slug}`>
+    <Button variant="secondary">Vælg plan</Button>
   </a>
 </article>
 
 <style>
-
-
   .pakker {
     background-color: #384222;
     border-radius: 20px;

@@ -159,7 +159,7 @@ input[type="text"] {
   background-image: url("/forside.webp");
   background-size: cover;
   position: relative;
-  background-position: center  -250px;
+  background-position: center -250px;
   width: 100%;
   padding-top: 50%;
   background-repeat: no-repeat;
@@ -341,6 +341,14 @@ input[type="text"] {
 
 .mobile_icon img {
   width: 25%;
+}
+
+.headphones_mobil {
+  width: 60%;
+}
+
+.tree_mobil {
+  width: 60%;
 }
 
 @media screen and (min-width: 800px) {
@@ -533,5 +541,13 @@ input[type="text"] {
 
   .tilbage {
     font-size: 1rem;
+  }
+
+  .headphones_mobil {
+    width: 80%;
+  }
+
+  .tree_mobil {
+    width: 80%;
   }
 }
